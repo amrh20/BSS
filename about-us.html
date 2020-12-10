@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="stylesheet/scss/style.css" />
+  <title>Best Smart Solution</title>
+</head>
+
+<body>
+  <div class="root">
+    <div class="home-wrapper">
+      <header class="main-header">
+        <div class="header-content">
+          <div class="img-holder">
+            Best Smart Solution
+          </div>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <div class="header-list-wrapper">
+            <ul>
+              <li>
+                <a href="index.html">home</a>
+              </li>
+              <li>
+                <a>services</a>
+              </li>
+              <li class="active">
+                <a href="aboutus.html">about us</a>
+              </li>
+              <li>
+                <a href="contact-us.html">contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <main class="main-wrapper">
+       <div class="about-us">
+        <div class="top">
+          <div class="container">
+            <h1 class="txt-h1">WHO WE ARE?</h1>
+            <p class="txt-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat totam corporis, sequi accusantium quas consectetur? Aut, 
+              fugiat eligendi commodi numquam optio ratione accusantium dolore, libero adipisci impedit, repellat nam incidunt!</p>
+              
+          </div>
+     
+        </div>
+          <div class="container">
+            <div class="bottom">
+            <div>
+              <h1 class="txt-h1">OUR MISSION</h1>
+              <p class="txt-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat totam corporis, sequi accusantium quas consectetur? Aut, 
+                fugiat eligendi commodi numquam optio ratione accusantium dolore, libero adipisci impedit, repellat nam incidunt!</p>
+                
+            </div>
+                <div>
+                 <img src="./images/img1.png" alt="">
+                </div>
+          </div>
+      
+        </div>
+       </div>
+  
+      </main>
+      <!-- <div class="go-top"></div> -->
+      <footer class="main-footer">
+
+        <div class="footer-copyright">© 2020 Best Smart Solution</div>
+      </footer>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script>
+
+    $(function () {
+   
+      $(".burger").click(function (e) {
+        e.preventDefault();
+        $(".burger").toggleClass("toggle");
+      });
+      $(".go-top").click(function () {
+        $(".main-header ul li").first().click();
+      });
+    });
+  </script>
+</body>
+
+</html>
